@@ -1,0 +1,19 @@
+var email = new QueuedEmail
+{
+Priority = QueuedEmailPriority.High,
+From = emailAccount.Email,
+FromName = emailAccount.DisplayName,
+To = toEmailAddress,
+ToName = toName,
+ReplyTo = replyToEmailAddress,
+ReplyToName = replyToName,
+CC = string.Empty,
+Bcc = bcc,
+Subject = subjectReplaced,
+Body = bodyReplaced,
+AttachmentFilePath = attachmentFilePath,
+AttachmentFileName = attachmentFileName,
+AttachedDownloadId = messageTemplate.AttachedDownloadId,
+CreatedOnUtc = DateTime.UtcNow,
+EmailAccountId = emailAccount.Id
+};
